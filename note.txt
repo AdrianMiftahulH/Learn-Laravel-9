@@ -1,0 +1,22 @@
+# What have I learned in laravel 9 ??
+
+## Routing and Controller
+php artisan make:controller HalamanController => membuat sebuah controller
+
+## Learn use Blade template
+## connections, migrations, seeds
+php artisan make:migration create_siswa_table => membuat sebuah migration
+php artisan migrate => migration ke databse yang terhubung
+php artisan migrate:status ->untuk melihat status migration ke db
+php artisan make:seed SiswaSeeder => membuat sebuah seeder
+php artisan db:seed --class=SiswaSeeder =>mengirim seeder ke database
+
+## display data with ELOQUENT
+$ php artisan make:model siswa => membuat sebuah model
+
+## save data, custom validation message
+## EDIT, UPDATE, DELETE
+## upload image
+## Login, Logout, Register
+## MIDDLEWARE
+## Upload Laravel to hosting
