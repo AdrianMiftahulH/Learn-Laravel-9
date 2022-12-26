@@ -1,7 +1,7 @@
 @extends('layout/aplikasi')
 
 @section('content')
-    <form method="post" action="/siswa">
+    <form method="post" action="/siswa" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="nomor_induk" class="form-label">Nomor Induk</label>
@@ -14,6 +14,10 @@
         <div class="mb-3">
             <label for="alamat" class="form-label">Alamat</label>
             <textarea name="alamat" id="alamat" class="form-control">{{ Session::get('alamat') }}</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="foto" class="form-label">Foto</label>
+            <input name="foto" type="file" class="form-control" id="foto">
         </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Simpan</button>

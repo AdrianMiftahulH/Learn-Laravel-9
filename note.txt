@@ -14,7 +14,7 @@ php artisan db:seed --class=SiswaSeeder =>mengirim seeder ke database
 ## display data with ELOQUENT
 $ php artisan make:model siswa => membuat sebuah model
 
-## save data, custom validation message
+## save data, custom validation messageSis
 ## EDIT, UPDATE, DELETE
 ## upload image
 ## Login, Logout, Register
