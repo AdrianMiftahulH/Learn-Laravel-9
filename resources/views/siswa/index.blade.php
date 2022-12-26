@@ -1,6 +1,7 @@
 @extends('layout/aplikasi')
 
 @section('content')
+    <a href="/siswa/create" class="btn btn-primary">Tambah Data Siswa</a>
     <table class="table">
         <thead>
             <tr>
@@ -17,7 +18,7 @@
                     <td>{{ $item->nama }}</td>
                     <td>{{ $item->alamat }}</td>
                     <td><a href="{{ url('/siswa/'.$item->nomor_induk) }}" class="btn btn-info">Detail</a></td>
-                </tr> 
+                </tr>
             @endforeach
         </tbody>
     </table>
